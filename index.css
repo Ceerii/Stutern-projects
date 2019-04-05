@@ -1,0 +1,318 @@
+*{
+  padding:0;
+  margin:0;
+}
+/*These are the div classes*/
+  .container{
+    width:100%;
+    height:100vh;
+    background: linear-gradient( #e96443,#904e95);
+    background-repeat: no-repeat;
+  }
+  .top-container{
+      width:100%;
+      height:50px;
+      background-color: #f6f8fa;
+      box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  .main-head{
+    max-width:90%;
+    margin:auto;
+  }
+  .Content{
+    max-width:90%;
+    margin:auto;
+  }
+  .Start-Finish{
+    max-width: 90%;
+    margin:auto;
+  }
+  .End{
+    max-width: 90%;
+    margin:auto;
+    margin-top:30px;
+    height:30px;
+    box-sizing:border-box;
+  }
+  .icon-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:50px;
+    float: right;
+    grid-gap:7px;
+    margin-top: -17px;
+    margin-right:27px;
+  }
+  /*This is the link class*/
+  .fab{
+    font-size:22px;
+    padding-top:20px;
+    padding-right:25px;
+    color:#f6f8fa;
+    text-decoration: none;
+  }
+ /*These are the elements*/
+  h1 {
+    font-family:'Roboto', sans-serif;
+    font-size:16px;
+    padding-top:6%;
+    margin-right: 10px;
+    background: -webkit-linear-gradient( 180deg, #e96443,#904e95);
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    
+  }
+  h2{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size:30px;
+    margin-top:170px;
+    text-align:left; 
+    color:#f6f8fa;
+    
+  }
+  h3{
+    font-family:'Roboto', sans-serif;
+    line-height:normal;
+    text-align:left;
+    font-size:16px;
+    color:#f6f8fa;
+    margin:auto;
+  }
+
+  /*These are for animating my text*/
+  .Welcome {
+    animation: fade 3s linear;
+    -webkit-animation: fade 3s 1 linear;
+  }
+   @keyframes fade{
+    0%{
+     opacity: 0;
+    }
+    20%{
+      opacity:0;
+    }
+    30%{
+      opacity:0.4;
+    }
+    60%{
+      opacity:0.6;
+    }
+    80%{
+      opacity:0.8;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+    @-webkit-keyframes fade {
+        0%{
+         opacity: 0;
+        }
+        20%{
+          opacity:0;
+        }
+        30%{
+          opacity:0.4;
+        }
+        60%{
+          opacity:0.6;
+        }
+        80%{
+          opacity: 0.8;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+      .Start-Finish{
+        animation: fade1 3s linear;
+        -webkit-animation: fade1 3s 1 linear;
+      }
+      @keyframes fade1 {
+        0%{
+         opacity: 0;
+        }
+        20%{
+          opacity:0;
+        }
+        40%{
+          opacity:0;
+        }
+        60%{
+          opacity:0.2;
+        }
+        70%{
+          opacity:0.5;
+        }
+        80%{
+          opacity:0.8;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+        @-webkit-keyframes fade1 {
+            0%{
+             opacity: 0;
+            }
+            20%{
+              opacity:0;
+            }
+            40%{
+              opacity:0;
+            }
+            60%{
+              opacity:0.2;
+            }
+            70%{
+              opacity:0.5;
+            }
+            80%{
+              opacity: 0.8;
+            }
+            100%{
+              opacity: 1;
+            }
+          }
+          .End{
+            animation: fade2 3s linear;
+            -webkit-animation: fade2 3s linear;
+          }
+          @keyframes fade2 {
+            0%{
+             opacity: 0;
+            }
+          
+            80%{
+              opacity:0.2;
+            }
+            90%{
+              opacity: 0.4;
+            }
+            100%{
+              opacity: 1;
+            }
+          }
+            @-webkit-keyframes fade2 {
+                0%{
+                 opacity: 0;
+                }
+                80%{
+                  opacity: 0.2;
+                }
+                90%{
+                  opacity: 0.4;
+                }
+                100%{
+                  opacity: 1;
+                }
+              }
+     /*This is the css for styling the icons*/
+.fa-search{
+    font-size: 16px;
+    background: -webkit-linear-gradient( 180deg, #e96443,#904e95);
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+  }
+  .fa-home{
+    font-size: 16px;
+    background: -webkit-linear-gradient( 180deg, #e96443,#904e95);
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+   
+  }
+  .fa-user-alt{
+    font-size: 16px;
+    background: -webkit-linear-gradient( 180deg,  #e96443,#904e95);
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+  
+  }
+  /*These are for hover*/
+  
+  /*These are my media queries*/
+  @media(min-width:700px){
+    .container{
+      background:linear-gradient(70deg, #ef32d9,#89fffd);
+      background-repeat:no-repeat;
+  }
+    .fas{
+  background:linear-gradient(70deg, #ef32d9,#89fffd);
+  background-repeat:no-repeat;
+  -webkit-background-clip:text;
+  background-clip: text;
+  -webkit-text-fill-color:transparent;
+  font-size:22px;
+
+  }
+  .icon-grid{
+  width:130px;
+  margin-top:-25px;
+  }
+  .top-container{
+    height:80px;
+  }
+  h1 {
+    font-family:'Roboto', sans-serif;
+    font-size:22px;
+    padding-top:30px;
+  }
+  .Welcome{
+    font-size:40px;
+    margin-top:230px;
+    padding-bottom: 10px;
+
+  }
+  h3{
+    font-size:24;
+  }
+  .fab{
+    font-size:24px;
+    margin-top:-20px;
+    padding-right: 45px;
+  }
+  }
+  @media(min-width:1000px){
+      .container{
+      background:linear-gradient( #ffc371,#ff5f6d);
+    }
+    .fas{
+      background:linear-gradient( #ffc371,#ff5f6d);
+      -webkit-background-clip:text;
+      background-clip: text;
+      -webkit-text-fill-color:transparent;
+      font-size:28px;
+    }
+    h1{
+      font-family:'Roboto', sans-serif;
+      font-size:28px;
+      padding-top:25px;
+      background:linear-gradient( #ffc371,#ff5f6d);
+      -webkit-background-clip:text;
+      background-clip: text;
+      -webkit-text-fill-color:transparent;
+    }
+    .icon-grid{
+      grid-gap:10px;
+    }
+    .top-container{
+      height:80px;
+    } 
+    .Welcome{
+    font-size:60px;
+    margin-top: 200px;
+   padding-bottom:15px;
+    }
+    h3{
+      font-size:30px;
+    }
+    .fab{
+      font-size:30px;
+       padding-top: 20px;
+      padding-right: 65px;
+    }
+  }  
